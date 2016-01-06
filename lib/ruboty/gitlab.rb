@@ -1,7 +1,5 @@
+require "ruboty"
+require "ruboty/gitlab/actions/base"
+require "ruboty/gitlab/actions/remember"
 require "ruboty/gitlab/version"
-
-module Ruboty
-  module Gitlab
-    # Your code goes here...
-  end
-end
+require "ruboty/handlers/gitlab"
