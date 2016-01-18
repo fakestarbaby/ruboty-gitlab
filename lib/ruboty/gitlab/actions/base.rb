@@ -41,7 +41,7 @@ module Ruboty
         end
 
         def search_project
-          client.search_projects(given_project).first
+          client.projects({ search: given_project }).first
         end
 
         def project
