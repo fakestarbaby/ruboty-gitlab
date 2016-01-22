@@ -41,7 +41,7 @@ module Ruboty
         end
 
         def search_project
-          client.projects({ search: given_project }).first
+          client.projects({ search: given_project }).find { |project| project.name == given_project }
         end
 
         def project
