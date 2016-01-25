@@ -15,12 +15,22 @@ module Ruboty
         description: "Remember sender's GitLab private token",
       )
 
+      on(
+        /clear cache gitlab brain\z/,
+        name: "clear_cache",
+        description: "Clear cache of GitLab's brain",
+      )
+
       def create_issue(message)
         Ruboty::Gitlab::Actions::CreateIssue.new(message).call
       end
 
       def remember(message)
         Ruboty::Gitlab::Actions::Remember.new(message).call
+      end
+
+      def clear_cache(message)
+        Ruboty::Gitlab::Actions::ClearCache.new(message).call
       end
     end
   end

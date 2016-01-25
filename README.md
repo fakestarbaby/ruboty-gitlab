@@ -14,6 +14,7 @@ gem "ruboty-gitlab"
 ```
 @ruboty create gitlab issue "<title>" on <project>[\n<description>] - Create a new issue
 @ruboty remember my gitlab token <token> - Remember sender's GitLab private token
+@ruboty clear cache gitlab brain - Clear cache of GitLab's brain
 ```
 
 ## ENV
