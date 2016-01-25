@@ -52,6 +52,10 @@ module Ruboty
           message[:project]
         end
 
+        def clear_projects
+          message.robot.brain.data[NAMESPACE][:projects] = nil
+        end
+
         def client
           ::Gitlab::Client.new(client_options)
         end

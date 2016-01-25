@@ -3,6 +3,7 @@ require "gitlab"
 
 require "ruboty"
 require "ruboty/gitlab/actions/base"
+require "ruboty/gitlab/actions/clear_cache"
 require "ruboty/gitlab/actions/create_issue"
 require "ruboty/gitlab/actions/remember"
 require "ruboty/gitlab/version"
